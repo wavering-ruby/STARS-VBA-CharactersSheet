@@ -1,4 +1,4 @@
-Attribute VB_Name = "Módulo1"
+Attribute VB_Name = "DiceRolls"
 Function random_between(min As Integer, max As Integer) As Integer
     random_between = Int((max - min + 1) * Rnd + min)
 End Function
@@ -50,9 +50,9 @@ ReDim dices_values(qtd_dices) As Integer
 
 ' Debug message
 If IsEmpty(qtd_dices) Then
-    MsgBox "O valor é 0"
+    MsgBox "O valor Ã© 0"
 Else
-    MsgBox "O valor na L45 é " & qtd_dices
+    MsgBox "O valor na L45 Ã© " & qtd_dices
 End If
 
 If (IsEmpty(qtd_dices) Or qtd_dices = 0) Then
@@ -65,7 +65,7 @@ End If
 
 ' Debug message to view the stored values in the array
 For i = 0 To qtd_dices - 1
-    MsgBox "O índice " & i & " contém o valor: " & dices_values(i)
+    MsgBox "O Ã­ndice " & i & " contÃ©m o valor: " & dices_values(i)
 Next i
 
 MsgBox concat_array(dices_values)
