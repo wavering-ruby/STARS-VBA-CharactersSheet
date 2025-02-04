@@ -1,3 +1,9 @@
+# About the Repository
+
+This is a fan made to the fandom o STARS RPG. Here, you will have a lot of Character's Sheet automatically in Excel to improve your session and organize you character way efficient. Feel free to open a Issue in the case you want a change in the Sheet. If you have a question, please, send me a e-mail and I will answer all your question. **Remember that's it a brazillian :br: repository, so the Sheet will be in pt-br**, if you want a translated sheet send me a e-mail.
+
+Have fun and **STARS THE BEST RPG FOREVER**
+
 # Excel Functions
 
 ## Age Range
@@ -51,7 +57,6 @@ This function calculates a character's Health Points (HP or PV). The formula inc
 - Output: The character's HP (PV) based on their class, Constitution, and Chaotic Exposure. For "Robusto" subclasses, the formula adjusts when exposure exceeds 15%, doubling the Constitution bonus.
 
 ---
-
 
 # VBA Functions
 
@@ -168,6 +173,14 @@ Function RandomBetween(Min As Integer, Max As Integer) As Integer
     RandomBetween = Int((Max - Min + 1) * Rnd + Min)
 End Function
 ```
+
+**E.g.:** if the user write d10 in the "Básico" sheet the max will be "10" - because 10 is in the right of "d", this is only possible thanks [TextRight](#textright) function, that remove the "d" from the string.
+
+Continuing the example: 10 now it's the maximum value of the dice and the minimum is forever 1 (the dice value can't be <= 0). So, the calculation has a Rnd variable, this Rnd variable return a random number to the function that multiply the difference between the maximum and minimum value. 
+
+THe function Rnd always return a number >= 0 < 1.
+
+If the value in Rnd is 0.2. The formula will be "(8) * 1.2". Remeber, the Int() function in VBA round the value to down. So, the final result is: **9**.
 
 ---
 
@@ -379,3 +392,8 @@ End Function
 - Now you can roll dice on the character sheet;
 - Added calculator for reactions (blocking and dodging) and passive perception;
 - Fixed the PP Limit and added a sum with Power attribute if the character's subclass is "Path of Agony".
+
+# Bibliography
+- [Int](https://learn.microsoft.com/en-us/office/vba/language/reference/user-interface-help/int-fix-functions).
+- [Rnd](https://learn.microsoft.com/en-us/office/vba/language/reference/user-interface-help/rnd-function).
+- [Randomize](https://learn.microsoft.com/pt-br/office/vba/language/reference/user-interface-help/randomize-statement).
