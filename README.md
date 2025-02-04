@@ -132,9 +132,37 @@ End Function
 
 # Versions
 
-## 4.0.
+## 2.0.
+- Updated to the new book version.
 
-### 4.1.
+## 3.0.
+- Updated to the new book version.
+
+## 3.1.
+- Updated some cells.
+
+## 3.2. 
+- Fixed the calculate of PV, PP and PS;
+- Fixed the calculate of equipament cust;
+- Added a template for the Power Abilities on the first page.
+
+## 3.3.
+- Added PV calculate for Robust;
+- Adaptade the formules of equipamente cust to old versions of Excel;
+- Added deslocation when selected the subclasse "Elite Trooper".
+
+## 3.4. 
+- Fixed PV, PP and PS points at 5%
+- Added suspense list for classes names.
+
+## 3.5 
+- Fixed the power DT;
+
+## 4.0.
+- Fixed the calculate of deslocation e now it's possible to change the value in "m" to squares;
+- Added calculator for resistence.
+
+## 4.1.
 - Now you can roll dices in the characters sheet;
 - Added calculator of reactions (blocking and dodging) and passive perception;
 - Fixed the PP Limit and added sum with Power attribute if the character's subclass is "Path of Agony".
