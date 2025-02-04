@@ -1,6 +1,57 @@
 # Excel Functions
 
+## Age Range
+
+This function takes an integer input from a cell, which represents the age of the character, and uses conditional comparisons to determine the character's age group.
+
+```Excel
+=IF(AND(G6>=8, G6<=12), "Child", IF(AND(G6>=13, G6<=17), "Teenager", IF(AND(G6>=18, G6<=24), "Young Adult", IF(AND(G6>=25, G6<=39), "Adult", IF(AND(G6>=40, G6<=64), "Middle Aged", IF(G6>=65, "Senior", "Baby"))))))
+```
+
+- **G6:** The age of the character.
+- **Output:** Returns one of the following strings based on the age:
+    - "Child" (ages 8-12)
+    - "Teenager" (ages 13-17)
+    - "Young Adult" (ages 18-24)
+    - "Adult" (ages 25-39)
+    - "Middle Aged" (ages 40-64)
+    - "Senior" (ages 65+)
+    - "Baby" (if age is below 8)
+
 ---
+
+## Total Attributes
+
+This function is used to calculate the total of a character’s attributes by summing values from multiple columns.
+
+```Excel
+=Básico!$M3 + N3 + Básico!$O3
+```
+
+- Básico!$M3: Attribute value from the "Básico" sheet, cell M3.
+- N3: Local value in the current sheet for the attribute.
+- Básico!$O3: Attribute value from the "Básico" sheet, cell O3.
+- Output: The sum of the three values, representing the total attribute value.
+
+---
+
+## HP Calculation (PV)
+
+This function calculates a character's Health Points (HP or PV). The formula includes variables like class, Constitution attribute, and Chaotic Exposure percentage. It also accounts for the "Robusto" subclass of Duelists, which modifies the calculation when the character reaches a certain threshold.
+
+```Excel
+=IFERROR(IF(AND(G20="Robusto", G22>=15%), (VLOOKUP($G$18, Classe, 2, TRUE) + (P8*2)) + ((G22/5%) * (VLOOKUP($G$18, Classe, 5, TRUE) + (P8*2))), (VLOOKUP($G$18, Classe, 2, TRUE) + P8) + (((G22-5%)/5%) * (VLOOKUP($G$18, Classe, 5, TRUE) + P8))), 0)
+```
+
+- G20: The subclass of the character (e.g., "Robusto").
+- G22: The percentage of Chaotic Exposure for the character.
+- $G$18: The character's class.
+- Classe: A table that contains class-related values (e.g., HP values).
+- P8: Constitution attribute value.
+- Output: The character's HP (PV) based on their class, Constitution, and Chaotic Exposure. For "Robusto" subclasses, the formula adjusts when exposure exceeds 15%, doubling the Constitution bonus.
+
+---
+
 
 # VBA Functions
 
