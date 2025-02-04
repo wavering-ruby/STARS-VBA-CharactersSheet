@@ -291,33 +291,41 @@ End Function
 - Updated to the new book version.
 
 ## 3.0.
+- :envelope_with_arrow: [Download](./Ficha-de-STARS-3.0.xlsx)
 - Updated to the new book version.
 
 ## 3.1.
+- :envelope_with_arrow: [Download](./Ficha-de-STARS-3.1.xlsx)
 - Updated some cells.
 
 ## 3.2. 
+- :envelope_with_arrow: [Download](./Ficha-de-STARS-3.2.xlsx)
 - Fixed the calculate of PV, PP and PS;
 - Fixed the calculate of equipament cust;
 - Added a template for the Power Abilities on the first page.
 
 ## 3.3.
+- :envelope_with_arrow: [Download](./Ficha-de-STARS-3.3.xlsx)
 - Added PV calculate for Robust;
 - Adaptade the formules of equipamente cust to old versions of Excel;
 - Added deslocation when selected the subclasse "Elite Trooper".
 
-## 3.4. 
+## 3.4.
+- :envelope_with_arrow: [Download](./Ficha-de-STARS-3.4.xlsx)
 - Fixed PV, PP and PS points at 5%
 - Added suspense list for classes names.
 
-## 3.5 
+## 3.5.
+- :envelope_with_arrow: [Download](./Ficha-de-STARS-3.5.xlsx)
 - Fixed the power DT;
 
 ## 4.0.
+- :envelope_with_arrow: [Download](./Ficha-de-STARS-4.0.xlsx)
 - Fixed the calculate of deslocation e now it's possible to change the value in "m" to squares;
 - Added calculator for resistence.
 
 ## 4.1.
+- :envelope_with_arrow: [Download](./Ficha-de-STARS-4.1.xlsm)
 - Now you can roll dices in the characters sheet;
 - Added calculator of reactions (blocking and dodging) and passive perception;
 - Fixed the PP Limit and added sum with Power attribute if the character's subclass is "Path of Agony".
