@@ -40,8 +40,15 @@ search_value = Range("L49").Value
 Set table = Range("R2:V30")
 return_column = 5
 
-' The value of expertise (perícia)
+' The value of expertise (per cia)
 result = Vlookup(search_value, table, return_column)
+
+' Debug message
+'If IsEmpty(qtd_dices) Then
+    'MsgBox "O valor   " & qtd_dices
+'Else
+    'MsgBox "O valor na L45   " & qtd_dices
+'End If
 
 If (IsEmpty(qtd_dices) Or qtd_dices = 0) Then
     dice_valors = RandomBetween(1, value_dice)
@@ -51,12 +58,21 @@ Else
     Next i
 End If
 
+' Debug message to view the stored values in the array
+'For i = 0 To qtd_dices - 1
+'    MsgBox "O  ndice " & i & " cont m o valor: " & dices_values(i)
+'Next i
+
+'MsgBox Sort(dices_values, Int(qtd_dices))
+
 roll_type = Range("L47").Value
 Dim flat_dmg As Variant
 flat_dmg = Range("M43").Value
 
 ' Organizing the array in ascend numbers
 sorted_dices = Sort(dices_values(), Int(qtd_dices))
+
+'MsgBox Sorted_dices(0)
 
 If Not IsEmpty(roll_type) Then
     If roll_type = "Dano" Then
@@ -106,7 +122,7 @@ End Function
 
 ## TextRight
 
-In the Excel, are defined what dice the user wants (d2, d3, d4, d6, d8, d10, d12, d20, d100) and this function gets the right side of the string and return as int to use a Max parameter in the function [RandomBetween](#randombetween) 
+In the Excel, are defined what dice the user wants (d2, d3, d4, d6, d8, d10, d12, d20, d100) and this function gets the right side of the string and return as int to use a Max parameter in the function [RandomBetween](#randombetween). This function is called once.
 
 ```VBA
 Function TextRight(cell As Range) As Integer
@@ -128,7 +144,144 @@ End Function
 
 ---
 
-## 
+## Sort
+
+This is one of the most important function in VBA code, because all the element in the array is ordered in descending, and with this, the [Min](#min) and [Max](#max) function get his value more easile and [ConcatArray](#concatarray) gets a tidy array.
+
+```VBA
+Function Sort(dice_values() As Integer, n As Integer) As Integer()
+    Dim i As Integer
+    Dim j As Integer
+    Dim temp As Integer
+    
+    If n = 0 Then
+        Sort = dice_values
+    Else
+        For i = 0 To n - 1
+            For j = 0 To n - 2
+                If dice_values(j) < dice_values(j + 1) Then
+                    temp = dice_values(j)
+                    dice_values(j) = dice_values(j + 1)
+                    dice_values(j + 1) = temp
+                End If
+            Next j
+        Next i
+    End If
+    
+    Sort = dice_values
+End Function
+```
+
+---
+
+## ConcatArray
+
+Return a string that is used to write in a cell all the dices rolled randomly. This function is needed to show in a beatiful way the array elements to the user.
+
+```VBA
+Function ConcatArray(dices_values() As Integer, n As Integer) As String
+    Dim i As Integer
+    Dim result As String
+    
+    result = ""
+    
+    ' -1 for the array length
+    For i = LBound(dices_values) To n - 1
+    
+        If i = n - 1 Then
+            result = result & dices_values(i)
+        Else
+            result = result & dices_values(i) & ", "
+        End If
+    Next i
+    
+    ' Just to personalize the view
+    result = " [ " & result & " ]"
+    
+    ConcatArray = Trim(result)
+End Function
+```
+
+---
+
+## Sum
+
+A function that return all the values summed of a array. This function it's used to the "Damage" dices.
+
+```VBA
+Function Sum(dices_values() As Integer, n As Integer) As Integer
+    Dim sum_total
+    
+    For i = 0 To n - 1
+        sum_total = sum_total + dices_values(i)
+    Next i
+    
+    ' Just for returnig the total of sum
+    Sum = sum_total
+End Function
+```
+
+---
+
+## Max
+
+Get's the bigger element in a array. Because the array it's actually sorted, the function just return the first value of the array.
+
+```VBA
+Function Max(dices_values() As Integer, n As Integer) As Integer
+    sorted_array = Sort(dices_values(), n)
+    Max = sorted_array(0)
+End Function
+```
+
+---
+
+## Min
+
+Get's the lowest element in a array.
+
+```VBA
+Function Min(dices_values() As Integer, n As Integer) As Integer
+    sorted_array = Sort(dices_values(), n)
+    
+    If n > 0 Then
+        Min = sorted_array(n - 1)
+    Else
+        Min = sorted_array(0)
+    End If
+End Function
+```
+
+---
+
+## Vlookup
+
+This is a code that imit a VLOOKUP function in the Excel. Utilizing a table defined in [DiceRolls](#dicerolls) this code search for a string value in a determined range of cells and return a value As Variant for the function that is the result of Expertise values determined by the user.
+
+```VBA
+Function Vlookup(search_value As Variant, table As Range, return_column As Integer) As Variant
+    Dim i As Integer
+    Dim num_lines As Integer
+    
+    ' Receive the line numbers of the table
+    num_lines = table.Rows.Count
+    
+    For i = 1 To num_lines
+        ' Verifica se o valor na primeira coluna corresponde ao valor procurado
+        If table.Cells(i, 1).Value = search_value Then
+            ' Return the value os spedified column
+             Vlookup = table.Cells(i, return_column).Value
+            Exit Function
+        End If
+    Next i
+    
+    ' If not search the value, just return 0
+    Vlookup = 0
+End Function
+
+```
+
+---
 
 # Versions
 
