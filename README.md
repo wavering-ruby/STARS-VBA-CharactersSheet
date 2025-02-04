@@ -286,7 +286,8 @@ End Function
 # Versions
 
 ## 2.0.
-[Download](Ficha de STARS - 2.0.xlsx)
+
+- :envelope_with_arrow: [Download](./Ficha-de-STARS-2.0.xlsx)
 - Updated to the new book version.
 
 ## 3.0.
