@@ -9,7 +9,7 @@
 This function makes the mechanic of roll dice in a Excel file. Enabling to the player use just one Sheet and one Excel file to player with your characters. Reduzing unnecessary processing. 
 
 ```VBA
-Sub dice_roll()
+Sub DiceRoll()
 
 ' Starting with random number
 Randomize
@@ -43,13 +43,6 @@ return_column = 5
 ' The value of expertise (perícia)
 result = Vlookup(search_value, table, return_column)
 
-' Debug message
-'If IsEmpty(qtd_dices) Then
-    'MsgBox "O valor é " & qtd_dices
-'Else
-    'MsgBox "O valor na L45 é " & qtd_dices
-'End If
-
 If (IsEmpty(qtd_dices) Or qtd_dices = 0) Then
     dice_valors = RandomBetween(1, value_dice)
 Else
@@ -58,21 +51,12 @@ Else
     Next i
 End If
 
-' Debug message to view the stored values in the array
-'For i = 0 To qtd_dices - 1
-'    MsgBox "O índice " & i & " contém o valor: " & dices_values(i)
-'Next i
-
-'MsgBox Sort(dices_values, Int(qtd_dices))
-
 roll_type = Range("L47").Value
 Dim flat_dmg As Variant
 flat_dmg = Range("M43").Value
 
 ' Organizing the array in ascend numbers
 sorted_dices = Sort(dices_values(), Int(qtd_dices))
-
-'MsgBox Sorted_dices(0)
 
 If Not IsEmpty(roll_type) Then
     If roll_type = "Dano" Then
