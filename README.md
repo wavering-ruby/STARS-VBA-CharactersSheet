@@ -4,7 +4,7 @@
 
 # VBA Functions
 
-## Dice Rolls (dice_rolls)
+## DiceRolls (Sub)
 
 This function makes the mechanic of roll dice in a Excel file. Enabling to the player use just one Sheet and one Excel file to player with your characters. Reduzing unnecessary processing. 
 
@@ -42,6 +42,38 @@ Next i
 
 MsgBox concat_array(dices_values)
 End Sub
+```
+
+## RandomBetween
+
+This function is core for the project, because this function draws random values ​​that will be stored in an array with the length determined by the quantity of pieces that user wants to roll.
+
+``` VBA
+Function RandomBetween(Min As Integer, Max As Integer) As Integer
+    RandomBetween = Int((Max - Min + 1) * Rnd + Min)
+End Function
+```
+
+## TextRight
+
+In the Excel, are defined what dice the user wants (d2, d3, d4, d6, d8, d10, d12, d20, d100) and this function gets the right side of the string and return as int to use a Max parameter in the function [RandomBetween](#randombetween) 
+
+```VBA
+Function TextRight(cell As Range) As Integer
+    Dim index As Integer
+    Dim text As String
+    
+    text = cell.Value
+    
+    index = InStr(text, "d")
+    
+    If index < 0 Then
+        TextRight = ""
+    Else
+        TextRight = Mid(text, index + 1)
+    End If
+    
+End Function
 ```
 
 ---
