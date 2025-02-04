@@ -256,7 +256,7 @@ End Function
 
 ## Vlookup
 
-This is a code that imit a VLOOKUP function in the Excel. Utilizing a table defined in [DiceRolls](#dicerolls) this code search for a string value in a determined range of cells and return a value As Variant for the function that is the result of Expertise values determined by the user.
+This is a code that imit a VLOOKUP function in the Excel. Utilizing a table defined in [DiceRolls](#dicerolls-(sub)) this code search for a string value in a determined range of cells and return a value As Variant for the function that is the result of Expertise values determined by the user.
 
 ```VBA
 Function Vlookup(search_value As Variant, table As Range, return_column As Integer) As Variant
