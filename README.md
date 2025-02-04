@@ -166,7 +166,7 @@ End Sub
 
 ## RandomBetween
 
-This function is core for the project, because this function draws random values ​​that will be stored in an array with the length determined by the quantity of pieces that user wants to roll.
+This function is core to the project because it generates random values that are stored in an array, with the length determined by the number of pieces the user wants to roll.
 
 ``` VBA
 Function RandomBetween(Min As Integer, Max As Integer) As Integer
@@ -174,19 +174,19 @@ Function RandomBetween(Min As Integer, Max As Integer) As Integer
 End Function
 ```
 
-**E.g.:** if the user write d10 in the "Básico" sheet the max will be "10" - because 10 is in the right of "d", this is only possible thanks [TextRight](#textright) function, that remove the "d" from the string.
+**E.g.:** if the user write d10 in the "Básico" sheet, the maximum value will be "10" because 10 is to the right of "d". This is only possible thanks to [TextRight](#textright) function.
 
-Continuing the example: 10 now it's the maximum value of the dice and the minimum is forever 1 (the dice value can't be <= 0). So, the calculation has a Rnd variable, this Rnd variable return a random number to the function that multiply the difference between the maximum and minimum value. 
+Continuing with the example: 10 is now the maximum value of the die, and the minimum is always 1 (the die value can't be <= 0). The calculation involves a Rnd variable, which returns a random number to the function that multiplies the difference between the maximum and minimum values.
 
-THe function Rnd always return a number >= 0 < 1.
+The Rnd function always returns a number >= 0 and < 1.
 
-If the value in Rnd is 0.2. The formula will be "(8) * 1.2". Remeber, the Int() function in VBA round the value to down. So, the final result is: **9**.
+If the value of Rnd is 0.2, the formula will be "(8) * 1.2". Remember, the Int() function in VBA rounds the value down. So, the final result is: 9.
 
 ---
 
 ## TextRight
 
-In the Excel, are defined what dice the user wants (d2, d3, d4, d6, d8, d10, d12, d20, d100) and this function gets the right side of the string and return as int to use a Max parameter in the function [RandomBetween](#randombetween). This function is called once.
+In Excel, the user defines which die they want (d2, d3, d4, d6, d8, d10, d12, d20, d100), and this function extracts the right side of the string and returns it as an integer to use as the Max parameter in the [RandomBetween](#randombetween). function. This function is called once.
 
 ```VBA
 Function TextRight(cell As Range) As Integer
@@ -206,11 +206,13 @@ Function TextRight(cell As Range) As Integer
 End Function
 ```
 
+**E.g.:** when the user writes "d10", this function selects everything to the right of the index where "d" is located. When it returns to the main function, the right side of "d" will be converted to an integer (note that the return type of the function is "As Integer").
+
 ---
 
 ## Sort
 
-This is one of the most important function in VBA code, because all the element in the array is ordered in descending, and with this, the [Min](#min) and [Max](#max) function get his value more easile and [ConcatArray](#concatarray) gets a tidy array.
+This is one of the most important functions in VBA code because all the elements in the array are ordered in descending order. With this, the [Min](#min) and [Max](#max) function their values more easily, and [ConcatArray](#concatarray) produces a tidy array.
 
 ```VBA
 Function Sort(dice_values() As Integer, n As Integer) As Integer()
@@ -235,6 +237,14 @@ Function Sort(dice_values() As Integer, n As Integer) As Integer()
     Sort = dice_values
 End Function
 ```
+
+**E.g.:** the Sort function will check every single element in the array and will change the values at each index to order them in descending order. For example:
+
+[2, 4, 6, 3]
+
+The array will be ordered as follows:
+
+[6, 5, 4, 2]
 
 ---
 
