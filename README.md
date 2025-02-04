@@ -127,3 +127,14 @@ End Function
 ```
 
 ---
+
+## 
+
+# Versions
+
+## 4.0.
+
+### 4.1.
+- Now you can roll dices in the characters sheet;
+- Added calculator of reactions (blocking and dodging) and passive perception;
+- Fixed the PP Limit and added sum with Power attribute if the character's subclass is "Path of Agony".
