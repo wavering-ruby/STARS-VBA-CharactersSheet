@@ -379,51 +379,51 @@ End Function
 # Versions
 
 ## 2.0.
-- :envelope_with_arrow: [Download](./Ficha-de-STARS-2.0.xlsx)
+- :envelope_with_arrow: [Download](./Character's%20Sheet/Ficha-de-STARS-2.0.xlsx)
 - Updated to the new book version.
 
 ## 3.0.
-- :envelope_with_arrow: [Download](./Ficha-de-STARS-3.0.xlsx)
+- :envelope_with_arrow: [Download](./Character's%20Sheet/Ficha-de-STARS-3.0.xlsx)
 - Updated to the new book version.
 
 ## 3.1.
-- :envelope_with_arrow: [Download](./Ficha-de-STARS-3.1.xlsx)
+- :envelope_with_arrow: [Download](./Character's%20Sheet/Ficha-de-STARS-3.1.xlsx)
 - Updated some cells.
 
 ## 3.2.
-- :envelope_with_arrow: [Download](./Ficha-de-STARS-3.2.xlsx)
+- :envelope_with_arrow: [Download](./Character's%20Sheet/Ficha-de-STARS-3.2.xlsx)
 - Fixed the calculate of PV, PP and PS;
 - Fixed the calculate of equipment cost;
 - Added a template for the Power Abilities on the first page.
 
 ## 3.3.
-- :envelope_with_arrow: [Download](./Ficha-de-STARS-3.3.xlsx)
+- :envelope_with_arrow: [Download](./Character's%20Sheet/Ficha-de-STARS-3.3.xlsx)
 - Added PV calculate for Robust;
 - Adapted the formulas of equipment cost to old versions of Excel;
 - Added displacement when selected the subclass "Elite Trooper".
 
 ## 3.4.
-- :envelope_with_arrow: [Download](./Ficha-de-STARS-3.4.xlsx)
+- :envelope_with_arrow: [Download](./Character's%20Sheet/Ficha-de-STARS-3.4.xlsx)
 - Fixed PV, PP and PS points at 5%;
 - Added dropdown list for class names.
 
 ## 3.5.
-- :envelope_with_arrow: [Download](./Ficha-de-STARS-3.5.xlsx)
+- :envelope_with_arrow: [Download](./Character's%20Sheet/Ficha-de-STARS-3.5.xlsx)
 - Fixed the power DT;
 
 ## 4.0.
-- :envelope_with_arrow: [Download](./Ficha-de-STARS-4.0.xlsx)
+- :envelope_with_arrow: [Download](./Character's%20Sheet/Ficha-de-STARS-4.0.xlsx)
 - Fixed the calculation of displacement and now it's possible to change the value from "m" to squares;
 - Added calculator for resistance.
 
 ## 4.1.
-- :envelope_with_arrow: [Download](./Ficha-de-STARS-4.1.xlsm)
+- :envelope_with_arrow: [Download](./Character's%20Sheet/Ficha-de-STARS-4.1.xlsm)
 - Now you can roll dice on the character sheet;
 - Added calculator for reactions (blocking and dodging) and passive perception;
 - Fixed the PP Limit and added a sum with Power attribute if the character's subclass is "Path of Agony".
 
 ## 4.2. 
-- :envelope_with_arrow: [Download](./Ficha-de-STARS-4.2.xlsm)
+- :envelope_with_arrow: [Download](./Character's%20Sheet/Ficha-de-STARS-4.2.xlsm)
 - Added a new tab for the "Passagem" powers.
 - In Construction.
 - 
