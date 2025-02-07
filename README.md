@@ -422,6 +422,11 @@ End Function
 - Added calculator for reactions (blocking and dodging) and passive perception;
 - Fixed the PP Limit and added a sum with Power attribute if the character's subclass is "Path of Agony".
 
+## 4.2. 
+- :envelope_with_arrow: [Download](./Ficha-de-STARS-4.2.xlsm)
+- Added a new tab for the "Passagem" powers.
+- In Construction.
+- 
 # Bibliography
 - [Int](https://learn.microsoft.com/en-us/office/vba/language/reference/user-interface-help/int-fix-functions).
 - [Rnd](https://learn.microsoft.com/en-us/office/vba/language/reference/user-interface-help/rnd-function).
