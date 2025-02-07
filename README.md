@@ -56,6 +56,25 @@ This function calculates a character's Health Points (HP or PV). The formula inc
 - P8: Constitution attribute value.
 - Output: The character's HP (PV) based on their class, Constitution, and Chaotic Exposure. For "Robusto" subclasses, the formula adjusts when exposure exceeds 15%, doubling the Constitution bonus.
 
+## PP Calculation (PP)
+
+This function calculates a character's Health Points (HP or PV). The formula uses variables such as class, Constitution attribute, and Chaotic Exposure percentage. It dynamically adjusts the calculation based on the character's class and exposure level.
+
+```Excel
+=SEERRO((PROCV($G$18;Classe;3;VERDADEIRO) + P6) + (((G22 - 5%) / 5%) * (PROCV($G$18;Classe;6;VERDADEIRO) + P6)); 0)
+```
+
+- G18: The character's class.
+- Classe: A table containing class-related values (e.g., base PP and modifiers).
+- P6: Power attribute value.
+- G22: The percentage of Chaotic Exposure for the character.
+- Output: The character's Power Points (PP) based on their class, Power attribute, and Chaotic Exposure.
+
+
+## SP Calculation (PS)
+
+In construction.
+
 ---
 
 # VBA Functions
