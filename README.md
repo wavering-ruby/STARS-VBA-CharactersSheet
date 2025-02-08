@@ -36,6 +36,8 @@ Have fun and **STARS THE BEST RPG FOREVER**
 │  ├─ [4.1.](#41) <br>
 │  └─ [4.2.](#42) <br>
 
+---
+
 # Excel Functions
 
 ## Age Range
