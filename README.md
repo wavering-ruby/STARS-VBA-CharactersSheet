@@ -5,33 +5,34 @@ This is a fan made to the fandom o STARS RPG. Here, you will have a lot of Chara
 Have fun and **STARS THE BEST RPG FOREVER**
 
 # Summary
-├─ [Excel Functions](#excel-functions)
-|  ├─ [Age Range](#age-range)
-|  ├─ [Total Attributes](#total-attributes)
-|  ├─ [HP Calculation (PV)](#hp-calculation-pv)
-|  ├─ [PP Calculation (PP)](#pp-calculation-pp)
-|  └─ [SP Calculation (PS)](#sp-calculation-ps)
-├─ [VBA Functions](#vba-functions)
-|  ├─ [Dice Rolls](#dicerolls-sub)
-|  ├─ [RandomBetween](#randombetween)
-|  ├─ [TextRight](#textright)
-|  ├─ [Sort](#sort)
-|  ├─ [ConcatArray](#concatarray)
-|  ├─ [Sum](#sum)
-|  ├─ [Max](#max)
-|  ├─ [Min](#min)
-|  └─ [Vlookup](#vlookup)
-├─ [Versions](#versions)
-|  ├─ [2.0.](#20)
-|  ├─ [3.0.](#30)
-|  ├─ [3.1.](#31)
-|  ├─ [3.2.](#32)
-|  ├─ [3.3.](#33)
-|  ├─ [3.4.](#34)
-|  ├─ [3.5.](#35)
-|  ├─ [4.0.](#40)
-|  ├─ [4.1.](#41)
-|  └─ [4.2.](#42)
+
+├─ [Excel Functions](#excel-functions) <br>
+│  ├─ [Age Range](#age-range) <br>
+│  ├─ [Total Attributes](#total-attributes) <br>
+│  ├─ [HP Calculation (PV)](#hp-calculation-pv) <br>
+│  ├─ [PP Calculation (PP)](#pp-calculation-pp) <br>
+│  └─ [SP Calculation (PS)](#sp-calculation-ps) <br>
+├─ [VBA Functions](#vba-functions) <br>
+│  ├─ [Dice Rolls](#dicerolls-sub) <br>
+│  ├─ [RandomBetween](#randombetween) <br>
+│  ├─ [TextRight](#textright) <br>
+│  ├─ [Sort](#sort) <br>
+│  ├─ [ConcatArray](#concatarray) <br>
+│  ├─ [Sum](#sum) <br>
+│  ├─ [Max](#max) <br>
+│  ├─ [Min](#min) <br>
+│  └─ [Vlookup](#vlookup) <br>
+├─ [Versions](#versions) <br>
+│  ├─ [2.0.](#20) <br>
+│  ├─ [3.0.](#30) <br>
+│  ├─ [3.1.](#31) <br>
+│  ├─ [3.2.](#32) <br>
+│  ├─ [3.3.](#33) <br>
+│  ├─ [3.4.](#34) <br>
+│  ├─ [3.5.](#35) <br>
+│  ├─ [4.0.](#40) <br>
+│  ├─ [4.1.](#41) <br>
+│  └─ [4.2.](#42) <br>
 
 # Excel Functions
 
