@@ -4,6 +4,8 @@ This is a fan made to the fandom o STARS RPG. Here, you will have a lot of Chara
 
 Have fun and **STARS THE BEST RPG FOREVER**
 
+---
+
 # Summary
 
 ├─ [Excel Functions](#excel-functions) <br>
@@ -86,6 +88,8 @@ This function calculates a character's Health Points (HP or PV). The formula inc
 - P8: Constitution attribute value.
 - Output: The character's HP (PV) based on their class, Constitution, and Chaotic Exposure. For "Robusto" subclasses, the formula adjusts when exposure exceeds 15%, doubling the Constitution bonus.
 
+---
+
 ## PP Calculation (PP)
 
 This function calculates a character's Health Points (HP or PV). The formula uses variables such as class, Constitution attribute, and Chaotic Exposure percentage. It dynamically adjusts the calculation based on the character's class and exposure level.
@@ -100,6 +104,7 @@ This function calculates a character's Health Points (HP or PV). The formula use
 - G22: The percentage of Chaotic Exposure for the character.
 - Output: The character's Power Points (PP) based on their class, Power attribute, and Chaotic Exposure.
 
+---
 
 ## SP Calculation (PS)
 
