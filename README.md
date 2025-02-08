@@ -4,6 +4,35 @@ This is a fan made to the fandom o STARS RPG. Here, you will have a lot of Chara
 
 Have fun and **STARS THE BEST RPG FOREVER**
 
+# Summary
+├─ [Excel Functions](#excel-functions)
+|  ├─ [Age Range](#age-range)
+|  ├─ [Total Attributes](#total-attributes)
+|  ├─ [HP Calculation (PV)](#hp-calculation-pv)
+|  ├─ [PP Calculation (PP)](#pp-calculation-pp)
+|  └─ [SP Calculation (PS)](#sp-calculation-ps)
+├─ [VBA Functions](#vba-functions)
+|  ├─ [Dice Rolls](#dicerolls-sub)
+|  ├─ [RandomBetween](#randombetween)
+|  ├─ [TextRight](#textright)
+|  ├─ [Sort](#sort)
+|  ├─ [ConcatArray](#concatarray)
+|  ├─ [Sum](#sum)
+|  ├─ [Max](#max)
+|  ├─ [Min](#min)
+|  └─ [Vlookup](#vlookup)
+├─ [Versions](#versions)
+|  ├─ [2.0.](#20)
+|  ├─ [3.0.](#30)
+|  ├─ [3.1.](#31)
+|  ├─ [3.2.](#32)
+|  ├─ [3.3.](#33)
+|  ├─ [3.4.](#34)
+|  ├─ [3.5.](#35)
+|  ├─ [4.0.](#40)
+|  ├─ [4.1.](#41)
+|  └─ [4.2.](#42)
+
 # Excel Functions
 
 ## Age Range
