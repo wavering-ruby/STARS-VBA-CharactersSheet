@@ -19,7 +19,7 @@ Have fun and **STARS THE BEST RPG FOREVER**
 │  ├─ [Deslocation](#deslocation) <br>
 │  ├─ [PP Limit](#pp-limit) <br>
 │  ├─ [Characteristic Points](#characteristic-points) <br>
-│  ├─ [Damage Resistance](#damage-resistence) <br>
+│  ├─ [Damage Resistance](#damage-resistance) <br>
 │  │  ├─ [Applied Resistance](#applied-resistance) <br>
 │  │  ├─ [Received Damage](#received-damage) <br>
 │  ├─ [Blocking Reaction](#blocking-reaction) <br>
@@ -194,8 +194,8 @@ This function shows how many characteristic points the character has available a
 
 ---
 
-## Damage Resistence
-### Applied Resistence
+## Damage Resistance
+### Applied Resistance
 
 This function is responsible for calculating the total applied resistance from a table. The user needs to filter which resistance is applied and send the total damage to a cell in Excel.
 
