@@ -94,7 +94,7 @@ This function calculates a character's Health Points (HP or PV). The formula inc
 
 ## PP Calculation (PP)
 
-This function calculates a character's Health Points (HP or PV). The formula uses variables such as class, Constitution attribute, and Chaotic Exposure percentage. It dynamically adjusts the calculation based on the character's class and exposure level.
+This function calculates a character's Health Points (HP or PV). The formula uses variables such as class, Power attribute, and Chaotic Exposure percentage. It dynamically adjusts the calculation based on the character's class and exposure level.
 
 ```Excel
 =SEERRO((PROCV($G$18;Classe;3;VERDADEIRO) + P6) + (((G22 - 5%) / 5%) * (PROCV($G$18;Classe;6;VERDADEIRO) + P6)); 0)
@@ -110,9 +110,23 @@ This function calculates a character's Health Points (HP or PV). The formula use
 
 ## SP Calculation (PS)
 
-In construction.
+The provided Excel function is a complex formula that calculates's character Sanity Points. The formula get the gain's of the class, Wisdow atribute and calculate with Chaotic Exposure percentage. In a similar form to [PP Calculation](#pp-calculation-pp) and [HP Calculation](#hp-calculation-pv).
+
+```Excel
+=SEERRO(
+    (PROCV($G$18; Classe; 4; VERDADEIRO) + P7) +
+    ((($G$22 - 5%) / 5%) * (PROCV($G$18; Classe; 7; VERDADEIRO) + P7) -
+    SOMA(Passagem!E3:E22) -
+    ((CONT.VALORES(Passagem!B3:B22) * PROCV($G$18; Classe; 7; VERDADEIRO) + P7));
+    0
+)
+```
 
 ---
+
+## Passive Defense (DP)
+
+
 
 # VBA Functions
 
