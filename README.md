@@ -203,6 +203,8 @@ This function is responsible for calculating the total applied resistance from a
 =SOMASE(Resistencia_Elemental[Aplicável?];"SIM";Resistencia_Elemental[RD (n°)])+SOMASE(Resistencia_Fisico[Aplicável?];"SIM";Resistencia_Fisico[RD (n°)])
 ```
 
+---
+
 ### Received Damage
 
 In a cell, this function return the total received damage from a enemy, but, before it's calculated the applied resistence and with the user can half the damage.
@@ -221,6 +223,8 @@ When the user blocks an attack from an enemy, they apply resistance based on the
 =$P$3 + SE($T$10 = "Calejado"; 2; SE($T$10 = "Experiente"; 3; SE($T$10 = "Mestre"; 4; 0))) + SE(G20 = "Robusto"; P8; 0)
 ```
 
+---
+
 ## Passive Perception
 
 This function calculates the value of the character's Passive Perception.
@@ -229,6 +233,8 @@ This function calculates the value of the character's Passive Perception.
 =5 + PROCV("Percepção"; Atributos; 5; VERDADEIRO)
 ```
 
+---
+
 ## Expertise Modifiers
 
 This formula returns the total Expertise Modifier by calculating the Expertise Training, plus other modifiers, and the base attribute of the expertise.
@@ -236,6 +242,8 @@ This formula returns the total Expertise Modifier by calculating the Expertise T
 ``` Excel
 =PROCV(S3;$L$3:$P$9;5;FALSO)+SE([@Treinamento] = "Leigo";0;SE([@Treinamento]="Calejado";2;SE([@Treinamento]="Experiente";3;4)))+[@Outros]
 ```
+
+---
 
 # VBA Functions
 
