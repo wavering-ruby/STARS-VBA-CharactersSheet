@@ -122,11 +122,26 @@ The provided Excel function is a complex formula that calculates's character San
 )
 ```
 
+- G18: The character's class (used to look up class-specific values in the Classe table).
+- Classe: A table containing class-related values, such as base SP and modifiers.
+- Column 4: Base SP for the class.
+- Column 7: PP modifier for the class.
+- P7: The character's Wisdom attribute value.
+- G22: The percentage of Chaotic Exposure for the character (e.g., 10%, 20%, etc.).
+- Passagem!E3:E22 : A range of values representing additional SP adjustments (e.g., from items or abilities).
+- Passagem!B3:B22 : A range of values representing conditions or effects that may modify SP (e.g., buffs or debuffs).
+
 ---
 
 ## Passive Defense (DP)
 
+This function just calculate the total of a Passive Defense from a character, using Dex attribute and some modificators. Furthermore, added a condition if the player wants mark the option to dodge sum the expertise training.
 
+```Excel
+=5 + P5 + M17 + SE(N53="SIM";SE(T25 = "Calejado"; 2; SE(T25 = "Experiente"; 3; SE(T25="Mestre";4;0)));0)
+```
+
+---
 
 # VBA Functions
 
