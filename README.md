@@ -589,7 +589,7 @@ End Function
 
 ## 3.5.
 - :envelope_with_arrow: [Download](./Character's%20Sheet/Ficha-de-STARS-3.5.xlsx)
-- Fixed the power DT;
+- Fixed the power DT.
 
 ---
 
@@ -610,8 +610,8 @@ End Function
 
 ## 4.2. 
 - :envelope_with_arrow: [Download](./Character's%20Sheet/Ficha-de-STARS-4.2.xlsm)
-- Added a new tab for the "Passagem" powers.
-- In Construction.
+- Added a new tab for the "Passagem" powers;
+- Added the calculation of Mental RD.
 
 ---
 
