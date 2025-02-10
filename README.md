@@ -221,7 +221,7 @@ When the user blocks an attack from an enemy, they apply resistance based on the
 =$P$3 + SE($T$10 = "Calejado"; 2; SE($T$10 = "Experiente"; 3; SE($T$10 = "Mestre"; 4; 0))) + SE(G20 = "Robusto"; P8; 0)
 ```
 
-## Passive Perceptation
+## Passive Perception
 
 This function calculates the value of the character's Passive Perception.
 
@@ -229,7 +229,7 @@ This function calculates the value of the character's Passive Perception.
 =5 + PROCV("Percepção"; Atributos; 5; VERDADEIRO)
 ```
 
-## Expertise Modificators
+## Expertise Modifiers
 
 This formula returns the total Expertise Modifier by calculating the Expertise Training, plus other modifiers, and the base attribute of the expertise.
 
