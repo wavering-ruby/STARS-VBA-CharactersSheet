@@ -13,7 +13,18 @@ Have fun and **STARS THE BEST RPG FOREVER**
 │  ├─ [Total Attributes](#total-attributes) <br>
 │  ├─ [HP Calculation (PV)](#hp-calculation-pv) <br>
 │  ├─ [PP Calculation (PP)](#pp-calculation-pp) <br>
-│  └─ [SP Calculation (PS)](#sp-calculation-ps) <br>
+│  ├─ [SP Calculation (PS)](#sp-calculation-ps) <br>
+│  ├─ [Passive Defense (DP)](#passive-defense-dp) <br>
+│  ├─ [Difficulty Test (DT)](#difficulty-test-dt) <br>
+│  ├─ [Deslocation](#deslocation) <br>
+│  ├─ [PP Limit](#pp-limit) <br>
+│  ├─ [Characteristic Points](#characteristic-points) <br>
+│  ├─ [Damage Resistance](#damage-resistance) <br>
+│  │  ├─ [Applied Resistance](#applied-resistance) <br>
+│  │  ├─ [Received Damage](#received-damage) <br>
+│  ├─ [Blocking Reaction](#blocking-reaction) <br>
+│  ├─ [Passive Perception](#passive-perception) <br>
+│  ├─ [Expertise Modifiers](#expertise-modifiers) <br>
 ├─ [VBA Functions](#vba-functions) <br>
 │  ├─ [Dice Rolls](#dicerolls-sub) <br>
 │  ├─ [RandomBetween](#randombetween) <br>
@@ -23,7 +34,7 @@ Have fun and **STARS THE BEST RPG FOREVER**
 │  ├─ [Sum](#sum) <br>
 │  ├─ [Max](#max) <br>
 │  ├─ [Min](#min) <br>
-│  └─ [Vlookup](#vlookup) <br>
+│  ├─ [Vlookup](#vlookup) <br>
 ├─ [Versions](#versions) <br>
 │  ├─ [2.0.](#20) <br>
 │  ├─ [3.0.](#30) <br>
@@ -125,7 +136,7 @@ The provided Excel function is a complex formula that calculates's character San
 - G18: The character's class (used to look up class-specific values in the Classe table).
 - Classe: A table containing class-related values, such as base SP and modifiers.
 - Column 4: Base SP for the class.
-- Column 7: PP modifier for the class.
+- Column 7: SP modifier for the class.
 - P7: The character's Wisdom attribute value.
 - G22: The percentage of Chaotic Exposure for the character (e.g., 10%, 20%, etc.).
 - Passagem!E3:E22 : A range of values representing additional SP adjustments (e.g., from items or abilities).
@@ -135,13 +146,96 @@ The provided Excel function is a complex formula that calculates's character San
 
 ## Passive Defense (DP)
 
-This function just calculate the total of a Passive Defense from a character, using Dex attribute and some modificators. Furthermore, added a condition if the player wants mark the option to dodge sum the expertise training.
+This function calculates the total Passive Defense of a character using the Dexterity (Dex) attribute and additional modifiers. Additionally, it includes a condition to add expertise training to the calculation if the player chooses the dodge option.
 
 ```Excel
 =5 + P5 + M17 + SE(N53="SIM";SE(T25 = "Calejado"; 2; SE(T25 = "Experiente"; 3; SE(T25="Mestre";4;0)));0)
 ```
 
 ---
+
+## Difficulty Test (DT)
+
+This function calculates the total Difficulty Test for a character using the Power attribute. It determines how difficult it is for an enemy to resist the character's power abilities.
+
+```Excel
+=5 + (G22 / 5%) / 2 + O17 + P6
+```
+
+---
+
+## Deslocation
+
+This function is responsible for calculating the displacement of the character, automatically determining the movement in meters and squares. Furthermore, it automatically applies the 'Elite Trooper' subclass effect when Chaotic Exposure reaches 15%.
+
+```Excel
+=SE(P16 = "Deslocamento (m)";VALORPARATEXTO(9+SE(E(G18="Duelista";G20="Tropa de Elite";G22>=15%);3;0)+(ARRED(P5/2;0)*1,5)); VALORPARATEXTO(((9+SE(E(G18="Duelista";G20="Tropa de Elite";G22>=15%);3;0)+(ARRED(P5/2;0)*1,5))/1,5)))
+```
+
+---
+
+## PP Limit
+
+This function is responsible for calculating the PP Limit, which represents the maximum ability power (with its cost) that the character can use.
+
+```Excel
+=CONCAT("Limite de PP: ";(G22/5%) + SE(G20="Caminho da Agonia"; P6; 0))
+```
+
+---
+
+## Characteristic Points
+
+This function shows how many characteristic points the character has available and determines the characteristics (positive or negative) based on Charisma.
+
+```Excel
+=((M9 + N9) * 3) + SOMA(N25:N31)
+```
+
+---
+
+## Damage Resistence
+### Applied Resistence
+
+This function is responsible for calculating the total applied resistance from a table. The user needs to filter which resistance is applied and send the total damage to a cell in Excel.
+
+```Excel
+=SOMASE(Resistencia_Elemental[Aplicável?];"SIM";Resistencia_Elemental[RD (n°)])+SOMASE(Resistencia_Fisico[Aplicável?];"SIM";Resistencia_Fisico[RD (n°)])
+```
+
+### Received Damage
+
+In a cell, this function return the total received damage from a enemy, but, before it's calculated the applied resistence and with the user can half the damage.
+
+```Excel
+=($L$34 - $N$34) / SE($M$34 = "SIM"; 2; 1)
+```
+
+---
+
+## Blocking Reaction
+
+When the user blocks an attack from an enemy, they apply resistance based on the function below. This function then returns the value of the Blocking Reaction.
+
+```Excel
+=$P$3 + SE($T$10 = "Calejado"; 2; SE($T$10 = "Experiente"; 3; SE($T$10 = "Mestre"; 4; 0))) + SE(G20 = "Robusto"; P8; 0)
+```
+
+## Passive Perceptation
+
+This function calculates the value of the character's Passive Perception.
+
+```Excel
+=5 + PROCV("Percepção"; Atributos; 5; VERDADEIRO)
+```
+
+## Expertise Modificators
+
+This formula returns the total Expertise Modifier by calculating the Expertise Training, plus other modifiers, and the base attribute of the expertise.
+
+``` Excel
+=PROCV(S3;$L$3:$P$9;5;FALSO)+SE([@Treinamento] = "Leigo";0;SE([@Treinamento]="Calejado";2;SE([@Treinamento]="Experiente";3;4)))+[@Outros]
+```
 
 # VBA Functions
 
