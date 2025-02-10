@@ -19,7 +19,7 @@ Have fun and **STARS THE BEST RPG FOREVER**
 │  ├─ [Deslocation](#deslocation) <br>
 │  ├─ [PP Limit](#pp-limit) <br>
 │  ├─ [Characteristic Points](#characteristic-points) <br>
-│  ├─ [Damage Resistance](#damage-resistance) <br>
+│  ├─ [Damage Resistance](#damage-resistence) <br>
 │  │  ├─ [Applied Resistance](#applied-resistance) <br>
 │  │  ├─ [Received Damage](#received-damage) <br>
 │  ├─ [Blocking Reaction](#blocking-reaction) <br>
