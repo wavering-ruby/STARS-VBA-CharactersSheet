@@ -1,4 +1,4 @@
-2## Downloading the Character Sheet
+## Downloading the Character Sheet
 
 First of all, you need to know what character sheet you need to your campaing. The last one version (4.2.) it's the most recent, where you can find in [README](README.md/#42). After choosing a sheet, you need to download by clicking in the Download link and instead using a command `Ctrl` `Shift` `S` in your keyboard. You can do it manually too, just using your mouse to click in the three points in the right top button, below your accout image and choosing the "Download" option. 
 
