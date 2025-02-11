@@ -19,7 +19,7 @@ Feel free to change the sheet as your wish, but be careful with the Excel fórmu
 The first thing to do is write the basic characteristics of your character. In this part of sheet you will fill the cell with your character's name, age, rank, date of birth, local of birth, background (you need to check the STARS's book), class, trail and Chaotic Exposure.
 
 <div align="center">
-  <img src="./Imgs/basic.png">
+  <img src="./Imgs/basic.png" height="50%" width="50%">
 </div>
 
 ---
