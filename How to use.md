@@ -26,7 +26,7 @@ The first thing to do is write the basic characteristics of your character. In t
 
 ## Attributes and Health
 
-To the right of the [Basic Characteristics](#basic-characteristics) you can distribute your attibute points. Regarding the limits, you need to consult you Tabletop Master.
+To the right of the [Basic Characteristics](#basic-characteristics), you can distribute your attribute points. Regarding the limits, you need to consult your Tabletop Master. On the same topic, you can view your HP, PP, and SP points automatically calculated. In the last line, you have your PP Limit calculated.
 
 <div align="center">
   <img src="./Imgs/attributes-health.jpeg">
