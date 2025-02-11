@@ -29,7 +29,7 @@ The first thing to do is write the basic characteristics of your character. In t
 To the right of the [Basic Characteristics](#basic-characteristics), you can distribute your attribute points. Regarding the limits, you need to consult your Tabletop Master. On the same topic, you can view your HP, PP, and SP points automatically calculated. In the last line, you have your PP Limit calculated.
 
 <div align="center">
-  <img src="./Imgs/attributes-health.jpeg">
+  <img src="./Imgs/attributes-health.jpeg" height="50%" width="50%">
 </div>
 
 ---
@@ -39,7 +39,7 @@ To the right of the [Basic Characteristics](#basic-characteristics), you can dis
 Below the [Basic Characteristics](#basic-characteristics), you can find two tables. In these tables, you can fill the name of the ability you are taking and the Powers that you have created. You can describe everthing your abilities do in the annotations in Excel.
 
 <div align="center">
-  <img src="./Imgs/abilities=and-powers.jpeg">
+  <img src="./Imgs/abilities=and-powers.jpeg" height="50%" width="50%">
 </div>
 
 ---
