@@ -1,4 +1,4 @@
-## Downloading the Character Sheet
+2## Downloading the Character Sheet
 
 First of all, you need to know what character sheet you need to your campaing. The last one version (4.2.) it's the most recent, where you can find in [README](README.md/#42). After choosing a sheet, you need to download by clicking in the Download link and instead using a command `Ctrl` `Shift` `S` in your keyboard. You can do it manually too, just using your mouse to click in the three points in the right top button, below your accout image and choosing the "Download" option. 
 
@@ -39,7 +39,7 @@ To the right of the [Basic Characteristics](#basic-characteristics), you can dis
 Below the [Basic Characteristics](#basic-characteristics), you can find two tables. In these tables, you can fill the name of the ability you are taking and the Powers that you have created. You can describe everthing your abilities do in the annotations in Excel.
 
 <div align="center">
-  <img src="./Imgs/abilities=and-powers.jpeg" height="50%" width="50%">
+  <img src="./Imgs/abilities-and-powers.jpeg" height="50%" width="50%">
 </div>
 
 ---
