@@ -10,4 +10,10 @@ Now you have you character sheet ready to use. You can finish reading this docum
 
 The first thing to do is write the basic characteristics of your character. In this part of sheet you will fill the cell with your character's name, age, rank, date of birth, local of birth, background (you need to check the STARS's book), class, trail and Chaotic Exposure.
 
-##
+<div align="center">
+  <img scr="./basic.png">
+</div>
+
+## Attributes
+
+To the right of the [Basic Characteristics](#basic-characteristics) you can distribute your attibute points. Regarding the limits, you need to consult you Tabletop Master.
