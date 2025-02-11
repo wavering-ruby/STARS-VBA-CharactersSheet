@@ -6,4 +6,6 @@ After download the character sheet you need to open and hability all the "macros
 
 Now you have you character sheet ready to use. You can finish reading this document for more explanations. 
 
-## Basic Characteristcs
+## Basic Characteristics
+
+The first thing to do is write the basic characteristics of your character. In this part of sheet you will fill the cell with your character's name, age, rank, date of birth, local of birth, background (you need to check the STARS's book), class, trail and Chaotic Exposure.
