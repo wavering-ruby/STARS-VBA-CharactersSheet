@@ -8,18 +8,38 @@ Now you have you character sheet ready to use. You can finish reading this docum
 
 ---
 
+## Recommendations
+
+Feel free to change the sheet as your wish, but be careful with the Excel fórmulas and macros. You will see that some cells has the background gray, this a signal to **NOT CHANGE THE CEIL**. If you want any help, contact me.
+
+---
+
 ## Basic Characteristics
 
 The first thing to do is write the basic characteristics of your character. In this part of sheet you will fill the cell with your character's name, age, rank, date of birth, local of birth, background (you need to check the STARS's book), class, trail and Chaotic Exposure.
 
 <div align="center">
-  <img scr="./basic.png">
+  <img src="./Imgs/basic.png">
 </div>
 
 ---
 
-## Attributes
+## Attributes and Health
 
 To the right of the [Basic Characteristics](#basic-characteristics) you can distribute your attibute points. Regarding the limits, you need to consult you Tabletop Master.
+
+<div align="center">
+  <img src="./Imgs/attributes-health.jpeg">
+</div>
+
+---
+
+## Class abilities and Powers
+
+Below the [Basic Characteristics](#basic-characteristics), you can find two tables. In these tables, you can fill the name of the ability you are taking and the Powers that you have created. You can describe everthing your abilities do in the annotations in Excel.
+
+<div align="center">
+  <img src="./Imgs/abilities=and-powers.jpeg">
+</div>
 
 ---
