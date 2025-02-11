@@ -39,7 +39,7 @@ To the right of the [Basic Characteristics](#basic-characteristics), you can dis
 Below the [Basic Characteristics](#basic-characteristics), you can find two tables. In these tables, you can fill the name of the ability you are taking and the Powers that you have created. You can describe everthing your abilities do in the annotations in Excel.
 
 <div align="center">
-  <img src="./Imgs/abilities-and-powers.jpeg" height="25%" width="50%">
+  <img src="./Imgs/abilities-and-powers.jpeg" height="10%" width="50%">
 </div>
 
 ---
