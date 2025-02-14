@@ -49,7 +49,7 @@ Below the [Basic Characteristics](#basic-characteristics), you can find two tabl
 The last table in the extreme right of the sheet is Expertise Table what calculates you expertise modifications. You only need to select what level of training is you character with this Expertise and write the modifications of a expertise on "Others" column (penultimate).
 
 <div align="center">
-  <img src="./Imgs/expertises.png" height="25%" width="25%">
+  <img src="./Imgs/expertises.png" height="50%" width="50%">
 </div>
 
 ---
