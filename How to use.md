@@ -10,7 +10,7 @@ Now you have you character sheet ready to use. You can finish reading this docum
 
 ## Recommendations
 
-Feel free to change the sheet as your wish, but be careful with the Excel formulas and macros. You will see that some cells has the background gray, this a signal to **FORMULA CEIL**, so if you change anything probably will have some errors, be careful. If you want any help, contact me.
+Feel free to modify the sheet as you wish, but be careful with the Excel formulas and macros. You’ll notice that some cells have a gray background — this indicates a **FORMULA CEIL**. If you change anything in these cells, it may cause errors, so proceed with caution. If you need any assistance, feel free to contact me.
 
 ---
 
