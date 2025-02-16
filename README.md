@@ -2,7 +2,7 @@
 
 This is a fan made to the fandom o STARS RPG. Here, you will have a lot of Character's Sheet automatically in Excel to improve your session and organize you character way efficient. Feel free to open a Issue in the case you want a change in the Sheet. If you have a question, please, send me a e-mail and I will answer all your question. **Remember that's it a brazillian (:br:) repository, so the Sheet will be in pt-br**, if you want a translated sheet send me a e-mail.
 
-If you want to know how to use the character sheet you can acess the ["How to use tutorial"](How%20to%20use.md)
+If you want to know how to use the character sheet you can acess the ["How to use tutorial"](HOW-TO-USE.md)
 
 Have fun and **STARS THE BEST RPG FOREVER**
 
