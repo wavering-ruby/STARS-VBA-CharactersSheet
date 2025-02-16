@@ -79,7 +79,7 @@ In this part of the character sheet you need to write the details of your weapon
 You can note every other items that may will help you in the mission.
 
 <div align="center">
-  <img src="./Imgs/passage-informations.png" height="50%" width="50%">
+  <img src="./Imgs/other-expenses.png" height="50%" width="50%">
 </div>
 
 ---
