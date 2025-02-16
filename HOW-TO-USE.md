@@ -59,7 +59,7 @@ The last table in the extreme right of the sheet is Expertise Table what calcula
 First of all, you need to select what type of damage you receive. After this, if you have any damage division you need to select "SIM" to half the damage.
 
 <div align="center">
-  <img src="./Imgs/damage_reduction.png" height="50%" width="50%">
+  <img src="./Imgs/damage-reduction.png" height="50%" width="50%">
 </div>
 
 ---
@@ -99,7 +99,7 @@ In everyline of this table you can fill with yours passage power in each level o
 In this section of your character sheet, you will find cells to fill in with your affinities. Taking advantage of the space, markings have been made to help you identify the oppressive and oppressed elements.
 
 <div align="center">
-  <img src="./Imgs/element_affinity.png" height="50%" width="50%">
+  <img src="./Imgs/element-affinity.png" height="50%" width="50%">
 </div>
 
 ---
