@@ -69,7 +69,15 @@ First of all, you need to select what type of damage you receive. After this, if
 In this part of the character sheet you need to write the details of your weapon and armor.
 
 <div align="center">
-  <img src="./Imgs/weapons-and-armors.png" height="50%" width="50%>
+  <img src="./Imgs/weapons-and-armors.png" height="50%" width="50%">
 </div>
 
 ---
+
+## Passage
+
+In everyline of this table you can fill with yours passage power in each level of Chaotic Exposition. You can use Excel note tool to write the passage power.
+
+<div align="center">
+  <img src="./Imgs/passage-informations.png" height="50%" width="50%">
+</div>
