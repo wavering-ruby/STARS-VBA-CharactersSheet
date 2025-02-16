@@ -56,6 +56,10 @@ The last table in the extreme right of the sheet is Expertise Table what calcula
 
 ## Resistence and Damage Reduction
 
-First of all, you need to select 
+First of all, you need to select what type of damage you receive. After this, if you have any damage division, 
+
+<div>
+  <img src="./Imgs/damage_reduction.png" height="50%" width="50%">
+</div>
 
 --- 
