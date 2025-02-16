@@ -62,4 +62,14 @@ First of all, you need to select what type of damage you receive. After this, if
   <img src="./Imgs/damage_reduction.png" height="50%" width="50%">
 </div>
 
---- 
+---
+
+## Weapons and Armor
+
+In this part of the character sheet you need to write the details of your weapon and armor.
+
+<div align="center">
+  <img src="./Imgs/weapon-and-armor.png" height="50%" width="50%>
+</div>
+
+---
