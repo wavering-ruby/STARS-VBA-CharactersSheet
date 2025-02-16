@@ -74,6 +74,16 @@ In this part of the character sheet you need to write the details of your weapon
 
 ---
 
+## Other Expenses
+
+You can note every other items that may will help you in the mission.
+
+<div align="center">
+  <img src="./Imgs/passage-informations.png" height="50%" width="50%">
+</div>
+
+---
+
 ## Passage
 
 In everyline of this table you can fill with yours passage power in each level of Chaotic Exposition. You can use Excel note tool to write the passage power.
@@ -81,3 +91,15 @@ In everyline of this table you can fill with yours passage power in each level o
 <div align="center">
   <img src="./Imgs/passage-informations.png" height="50%" width="50%">
 </div>
+
+---
+
+## Elemental Affinity
+
+In this section of your character sheet, you will find cells to fill in with your affinities. Taking advantage of the space, markings have been made to help you identify the oppressive and oppressed elements.
+
+<div align="center">
+  <img src="./Imgs/element_affinity.png" height="50%" width="50%">
+</div>
+
+---
