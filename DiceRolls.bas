@@ -75,13 +75,19 @@ Function Sum(dices_values() As Integer, n As Integer) As Integer
 End Function
 
 Function Max(dices_values() As Integer, n As Integer) As Integer
+    ' First, this function sort the array to get the first (high)
+
     sorted_array = Sort(dices_values(), n)
+    
+    ' After this, just get the first value (the highest)
     Max = sorted_array(0)
 End Function
 
 Function Min(dices_values() As Integer, n As Integer) As Integer
+    ' First, this function sort the array to get the last value (low)
     sorted_array = Sort(dices_values(), n)
     
+    ' If the array isn't empty, they get the last value
     If n > 0 Then
         Min = sorted_array(n - 1)
     Else
@@ -143,13 +149,6 @@ return_column = 5
 ' The value of expertise (perícia)
 result = Vlookup(search_value, table, return_column)
 
-' Debug message
-'If IsEmpty(qtd_dices) Then
-    'MsgBox "O valor é " & qtd_dices
-'Else
-    'MsgBox "O valor na L45 é " & qtd_dices
-'End If
-
 If (IsEmpty(qtd_dices) Or qtd_dices = 0) Then
     dice_valors = RandomBetween(1, value_dice)
 Else
@@ -158,21 +157,12 @@ Else
     Next i
 End If
 
-' Debug message to view the stored values in the array
-'For i = 0 To qtd_dices - 1
-'    MsgBox "O índice " & i & " contém o valor: " & dices_values(i)
-'Next i
-
-'MsgBox Sort(dices_values, Int(qtd_dices))
-
 roll_type = Range("L47").Value
 Dim flat_dmg As Variant
 flat_dmg = Range("M43").Value
 
 ' Organizing the array in ascend numbers
 sorted_dices = Sort(dices_values(), Int(qtd_dices))
-
-'MsgBox Sorted_dices(0)
 
 If Not IsEmpty(roll_type) Then
     If roll_type = "Dano" Then
