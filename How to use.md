@@ -53,3 +53,9 @@ The last table in the extreme right of the sheet is Expertise Table what calcula
 </div>
 
 ---
+
+## Resistence and Damage Reduction
+
+First of all, you need to select 
+
+--- 
