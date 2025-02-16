@@ -58,7 +58,7 @@ The last table in the extreme right of the sheet is Expertise Table what calcula
 
 First of all, you need to select what type of damage you receive. After this, if you have any damage division you need to select "SIM" to half the damage.
 
-<div>
+<div align="center">
   <img src="./Imgs/damage_reduction.png" height="50%" width="50%">
 </div>
 
