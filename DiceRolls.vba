@@ -136,18 +136,26 @@ ReDim dices_values(qtd_dices) As Integer
 Dim sorted_dices() As Integer
 
 ' Config to lookup value in table
-Dim table As Range
+Dim tableExpertise As Range
+Dim tableAttributes As Range
 Dim result As Variant
 Dim search_value As Variant
 Dim return_column As Integer ' For the column that a want to return the value
 
 ' Definitions of variable
 search_value = Range("L49").Value
-Set table = Range("R2:V30")
+Set tableExpertise = Range("R2:V30")
 return_column = 5
 
-' The value of expertise (perÃ­cia)
-result = Vlookup(search_value, table, return_column)
+' The value of expertise (perícia)
+resultExpertise = Vlookup(search_value, tableExpertise, return_column)
+
+' The value of attribute
+' To the pure attibute
+search_valueA = Range("M49").Value ' A variable exclusive to the table attributes
+Set tableAttributes = Range("L2:P9")
+
+resultAttribute = Vlookup(search_valueA, tableAttributes, return_column)
 
 If (IsEmpty(qtd_dices) Or qtd_dices = 0) Then
     dice_valors = RandomBetween(1, value_dice)
@@ -166,29 +174,37 @@ sorted_dices = Sort(dices_values(), Int(qtd_dices))
 
 If Not IsEmpty(roll_type) Then
     If roll_type = "Dano" Then
-        If IsEmpty(flat_dmg) Then
+        If IsEmpty(search_value) And IsEmpty(search_valueA) Then
             write_string = Sum(sorted_dices, Int(qtd_dices)) & " <- " & ConcatArray(sorted_dices, Int(qtd_dices))
+        ElseIf Not IsEmpty(search_valueA) Then
+            write_string = Sum(sorted_dices, Int(qtd_dices)) + flat_dmg + resultAttribute & " <- " & ConcatArray(sorted_dices, Int(qtd_dices)) & " + " & flat_dmg & " + " & resultAttribute
         Else
             write_string = Sum(sorted_dices, Int(qtd_dices)) + flat_dmg & " <- " & ConcatArray(sorted_dices, Int(qtd_dices)) & " + " & flat_dmg
         End If
     ElseIf roll_type = "Desvantagem" Then
-        If IsEmpty(search_value) Then
+        If IsEmpty(search_value) And IsEmpty(search_valueA) Then
             write_string = Min(sorted_dices, Int(qtd_dices)) & " <- " & ConcatArray(sorted_dices, Int(qtd_dices))
+        ElseIf Not IsEmpty(search_valueA) Then
+            write_string = Min(sorted_dices, Int(qtd_dices)) + resultAttribute & " <- " & ConcatArray(sorted_dices, Int(qtd_dices)) & " + " & resultAttribute
         Else
-            write_string = Min(sorted_dices, Int(qtd_dices)) + result & " <- " & ConcatArray(sorted_dices, Int(qtd_dices)) & " + " & result
+            write_string = Min(sorted_dices, Int(qtd_dices)) + resultExpertise & " <- " & ConcatArray(sorted_dices, Int(qtd_dices)) & " + " & resultExpertise
         End If
     ElseIf roll_type = "Vantagem" Then
-        If IsEmpty(search_value) Then
+        If IsEmpty(search_value) And IsEmpty(search_valueA) Then
             write_string = Max(sorted_dices, Int(qtd_dices)) & " <- " & ConcatArray(sorted_dices, Int(qtd_dices))
+        ElseIf Not IsEmpty(search_valueA) Then
+            write_string = Max(sorted_dices, Int(qtd_dices)) + resultAttribute & " <- " & ConcatArray(sorted_dices, Int(qtd_dices)) & " + " & resultAttribute
         Else
-            write_string = Max(sorted_dices, Int(qtd_dices)) + result & " <- " & ConcatArray(sorted_dices, Int(qtd_dices)) & " + " & result
+            write_string = Max(sorted_dices, Int(qtd_dices)) + resultExpertise & " <- " & ConcatArray(sorted_dices, Int(qtd_dices)) & " + " & resultExpertise
         End If
     End If
 Else
-    If IsEmpty(search_value) Then
+    If IsEmpty(search_value) And IsEmpty(search_valueA) Then
         write_string = Sum(sorted_dices, qtd_dices) & " <- " & ConcatArray(sorted_dices, Int(qtd_dices))
+    ElseIf Not IsEmpty(search_valueA) Then
+        write_string = Sum(sorted_dices, Int(qtd_dices)) + resultAttribute & " <- " & ConcatArray(sorted_dices, Int(qtd_dices)) & " + " & resultAttribute
     Else
-        write_string = Sum(sorted_dices, qtd_dices) + result & " <- " & ConcatArray(sorted_dices, Int(qtd_dices)) & " + " & result
+        write_string = Sum(sorted_dices, qtd_dices) + resultExpertise & " <- " & ConcatArray(sorted_dices, Int(qtd_dices)) & " + " & resultExpertise
     End If
 End If
 
