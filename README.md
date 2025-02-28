@@ -47,7 +47,8 @@ Have fun and **STARS THE BEST RPG FOREVER**
 │  ├─ [3.5.](#35) <br>
 │  ├─ [4.0.](#40) <br>
 │  ├─ [4.1.](#41) <br>
-│  └─ [4.2.](#42) <br>
+│  ├─ [4.2.](#42) <br>
+│  └─ [4.3.](#43) <br>
 
 ---
 
@@ -715,6 +716,15 @@ End Function
 - :envelope_with_arrow: [Download](./Character's%20Sheet/Ficha-de-STARS-4.2.xlsm)
 - Added a new tab for the "Passagem" powers;
 - Added the calculation of Mental RD.
+
+---
+
+## 4.3. 
+- :envelope_with_arrow: [Download](./Character's%20Sheet/Ficha-de-STARS-4.3.xlsm)
+- Added the calculation of the dice roll with the pure attribute value;
+- Fixed the calculation of the deslocation to old Excel versions;
+- Fixed the atribute of the expertise Religion;
+- Some visual ajusts in some spaces in the sheet.
 
 ---
 
