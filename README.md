@@ -48,7 +48,8 @@ Have fun and **STARS THE BEST RPG FOREVER**
 │  ├─ [4.0.](#40) <br>
 │  ├─ [4.1.](#41) <br>
 │  ├─ [4.2.](#42) <br>
-│  └─ [4.3.](#43) <br>
+│  ├─ [4.3.](#43) <br>
+│  └─ [4.4.](#44) <br>
 
 ---
 
@@ -741,6 +742,12 @@ End Function
 - Fixed the calculation of the deslocation to old Excel versions;
 - Fixed the atribute of the expertise Religion;
 - Some visual ajusts in some spaces in the sheet.
+
+---
+
+## 4.4. 
+- :envelope_with_arrow: [Download](./Character's%20Sheet/Ficha-de-STARS-4.4.xlsm)
+- Added a dinamic dropdown for subclass that filter the subclass based on the selected class.
 
 ---
 
