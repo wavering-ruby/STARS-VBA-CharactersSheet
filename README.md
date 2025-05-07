@@ -745,7 +745,7 @@ End Function
 
 ---
 
-## 4.4. 
+## 4.4. (In Construction)
 - :envelope_with_arrow: [Download](./Character's%20Sheet/Ficha-de-STARS-4.4.xlsm)
 - Added a dinamic dropdown for subclass that filter the subclass based on the selected class.
 
