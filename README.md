@@ -249,6 +249,16 @@ This formula returns the total Expertise Modifier by calculating the Expertise T
 
 ---
 
+## Subclass dinamic filter
+
+This formula returns all the subclass, filtred by the class, for the dropdown selection on the first page.
+
+``` Excel
+=SEERRO(FILTRO(Tabela10[Subclasse];Tabela10[Classe]=Básico!G18); "Selecione a classe primeiro...")
+```
+
+---
+
 # VBA Functions
 
 ## DiceRolls (Sub)
