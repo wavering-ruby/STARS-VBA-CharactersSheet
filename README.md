@@ -758,7 +758,8 @@ End Function
 ## 4.4.
 - :envelope_with_arrow: [Download](./Character's%20Sheet/Ficha-de-STARS-4.4.xlsm)
 - Added a dinamic dropdown that filter the subclass based on the selected class;
-- Added a dropwdown for weapons in equipaments tab.
+- Added a dropwdown for weapons in equipaments tab;
+- Adjusted the name of the training bonus.
 
 ---
 
